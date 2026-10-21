@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Магазин VR</title>
+    <style>
+      html, body { margin: 0; height: 100%; overflow: hidden; background: #11141c; font-family: system-ui, sans-serif; }
+      canvas { display: block; }
+      #info {
+        position: fixed; top: 12px; left: 12px; right: 12px; max-width: 460px;
+        color: #e8ecf5; background: rgba(17, 20, 28, .75); padding: 10px 14px;
+        border-radius: 10px; font-size: 14px; line-height: 1.45; pointer-events: none;
+      }
+      #info b { color: #7ee0a1; }
+    </style>
+  </head>
+  <body>
+    <div id="info">
+      <b>Магазин VR</b> — нажмите «ENTER VR» внизу (Quest Browser или Chrome + шлем).<br />
+      Расставляйте товары по полкам, а проданные кладите на <b>зелёную зону кассы</b>.<br />
+      Левый стик — ходьба, правый стик — поворот, курок/граб — взять предмет.
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
